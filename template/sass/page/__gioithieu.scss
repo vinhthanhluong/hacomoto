@@ -123,6 +123,14 @@
                 width: 100%;
             }
 
+            @include max-media($bk-d-992){
+                width: 50%;
+            }
+
+            @include max-media($bk-576){
+                width: 100%;
+            }
+
             &.intro-b-reverse {
                 .intro-bx {
                     justify-content: flex-start;
@@ -216,7 +224,7 @@
                 }
             }
 
-          
+
         }
 
         .intro-list {
@@ -224,14 +232,16 @@
             flex-wrap: wrap;
             margin: -15px;
             padding-top: 50px;
-            @include max-media($bk-d-992){
+
+            @include max-media($bk-d-992) {
                 padding-top: 30px;
             }
 
             .intro-item {
                 padding: 15px;
                 width: 50%;
-                @include max-media($bk-576){
+
+                @include max-media($bk-576) {
                     width: 100%;
                 }
             }
@@ -257,31 +267,45 @@
                 padding-left: 30px;
                 width: calc(100% - 64px);
                 color: $main-cl-2;
-                @include max-media($bk-d-1200){
+
+                @include max-media($bk-d-1200) {
                     padding-left: 10px;
+                }
+                
+                @include max-media($bk-d-992){
+                    padding-left: 20px;
                 }
             }
 
             .intro-tx {
                 margin-bottom: 10px;
+                @include max-media($bk-d-768){
+                    margin-bottom: 5px;
+                }
             }
         }
 
-        .solu-list{
+        .solu-list {
             display: flex;
             flex-wrap: wrap;
-            margin: -15px;  
+            margin: -15px;
             justify-content: space-between;
             padding-top: 40px;
-            .solu-item{
+
+            @include max-media($bk-d-1200) {
+                padding-top: 20px;
+            }
+
+            .solu-item {
                 padding: 15px;
                 width: 50%;
             }
 
-            .solu-tem{
+            .solu-tem {
                 display: flex;
                 align-items: center;
-                p{
+
+                p {
                     padding-left: 10px;
                     @include fz-16
                 }
@@ -293,9 +317,12 @@
 }
 
 .distributor {
+    overflow: hidden;
+
     .distri-head {
         margin-bottom: 40px;
-        @include max-media($bk-d-1200){
+
+        @include max-media($bk-d-1200) {
             margin-bottom: 25px;
         }
 
@@ -371,46 +398,201 @@
 
     }
 
-    .distri-box-more{
+    .distri-box-more {
         text-align: center;
         margin-top: 40px;
-        .distri-more{
+
+        .distri-more {
             background-color: $main-cl-2;
             color: $w-cl;
             @include fz-16;
             padding: 12px 24px 11px;
             display: inline-block;
             transition: all .3s ease;
-            &:hover{
+
+            &:hover {
                 background-color: $main-cl;
             }
 
-            i{
+            i {
                 margin-left: 8px;
             }
         }
     }
 }
 
-.our-team{
-    .our-head{
+.our-team {
+    overflow: hidden;
+
+    .our-head {
         margin-bottom: 40px;
-        .our-title{
+
+        @include max-media($bk-d-1200) {
+            margin-bottom: 20px;
+        }
+
+        .our-title {
             margin-top: 5px;
         }
     }
 
-    .our-slide{
-        .swiper-container{
+    .our-slide {
+        .swiper-container {
             margin: -15px;
             padding-bottom: 45px;
+
+            @include max-media($bk-d-992) {
+                margin: -7.5px;
+            }
+
+            .swiper-pagination {
+                @include max-media($bk-d-768) {
+                    bottom: 5px;
+                }
+            }
         }
-        .swiper-slide{
+
+        .swiper-slide {
             width: calc(100% / 12 * 3);
             padding: 15px;
-            // @include max-width($bk-d-1200){
-            //     width: calc(100% / 12 * 4);
-            // }
+
+            @include max-media($bk-d-1200) {
+                width: calc(100% / 12 * 4);
+            }
+
+            @include max-media($bk-d-992) {
+                padding: 7.5px;
+            }
+
+            @include max-media($bk-d-768) {
+                width: calc(100% / 12 * 6);
+            }
+
+            @include max-media(450px) {
+                width: 100%;
+            }
+        }
+
+
+
+        .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+            opacity: 1;
+            background-color: $w-cl;
+            border: 1px solid $main-cl;
+
+            &-active {
+                background-color: $main-cl;
+            }
+        }
+
+        .our-img {
+            img {
+                width: 100%;
+                height: 100%;
+                max-width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .our-content {
+            margin-top: 22px;
+            color: $main-cl-2;
+
+            @include max-media($bk-d-1200) {
+                margin-top: 15px;
+            }
+
+            .our-name {
+                font-weight: normal;
+                margin-bottom: 4px;
+                transition: all .3s ease;
+
+                &:hover {
+                    color: $main-cl;
+                }
+            }
+
+            .our-job {
+                margin-bottom: 15px;
+            }
+
+
+        }
+
+        .our-list {
+            .our-item {
+                display: flex;
+                align-items: center;
+            }
+
+            .our-icon {
+                flex-shrink: 0;
+
+            }
+
+            .our-link {
+                padding-left: 8px;
+                display: inline-block;
+            }
+
+            .our-item {
+                &:not(:first-child) {
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+}
+
+.certifications {
+    overflow: hidden;
+    .certifi-head {
+        margin-bottom: 40px;
+        @include max-media($bk-d-1200){
+            margin-bottom: 25px;
+        }
+    }
+
+    .certifi-title {
+        margin-top: 5px;
+    }
+
+    .certifi-slide {
+        pointer-events: none;
+        @include max-media($bk-d-1200){
+            pointer-events: all;
+        }
+        .swiper-slide {
+            width: calc(100% / 12 * 3);
+            height: auto;
+            @include max-media($bk-d-1024){
+                width: calc(100% / 12 * 4);
+            }
+            @include  max-media($bk-d-768){
+                width: 50%;
+            }
+            @include max-media($bk-576){
+                width: 100%;
+            }
+        }
+
+        .swiper-wrapper{
+            align-items: center;
+        }
+
+        .swiper-container{
+            @include max-media($bk-d-1200){
+                padding-bottom: 45px;
+            }
+        }
+
+        .swiper-pagination {
+            display: none;
+            @include max-media($bk-d-1200){
+                display: block;
+            }
         }
 
         .swiper-pagination-bullet{
@@ -419,52 +601,23 @@
             opacity: 1;
             background-color: $w-cl;
             border: 1px solid $main-cl;
-
             &-active{
                 background-color: $main-cl;
             }
         }
 
-        .our-content{
-            margin-top: 22px;
-            color: $main-cl-2;
-            .our-name{
-                font-weight: normal;
-                margin-bottom: 4px;
-                transition: all .3s ease;
-                &:hover{
-                    color: $main-cl;
-                }
-            }
-
-            .our-job{
-                margin-bottom: 15px;
-            }
-
-            
-        }
-
-        .our-list{
-            .our-item{
-                display: flex;
-                align-items: center;
-            }
-
-            .our-icon{
-                flex-shrink: 0;
-                
-            }
-
-            .our-link{
-                padding-left: 8px;
-                display: inline-block;
-            }
-
-            .our-item{
-                &:not(:first-child){
-                    margin-top: 8px;
-                }
+        .certifi-img {
+            img {
+                width: auto;
+                height: 100%;
+                max-width: 100%;
+                object-fit: cover;
+                margin: 0 auto;
             }
         }
     }
+
+
+
+
 }

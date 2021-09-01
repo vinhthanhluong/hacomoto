@@ -1168,6 +1168,12 @@
             transition: all 0.3s ease;
             @include hidden;
             transform: translateY(100%);
+            @include max-media($bk-d-1200){
+                padding: 15px;
+            }
+            @include max-media($bk-576){
+                padding: 10px;
+            }
 
             .home-t {
                 transition: all 0.3s ease;

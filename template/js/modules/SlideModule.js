@@ -419,4 +419,34 @@ export default function SlideModule() {
             console.log(err)
         }
     }
+
+    function slideCer() {
+
+        if (document.querySelector('.swiper-certifi')) {
+            const swiper = document.querySelector('.swiper-certifi');
+            const sliderContainer = swiper.querySelector('.swiper-container');
+            const SliderPagination = swiper.querySelector('.swiper-pagination');
+            const sliderPrevBtn = swiper.querySelector('.swiper-prev');
+            const sliderNextBtn = swiper.querySelector('.swiper-next');
+            try {
+                const swiper = new Swiper(sliderContainer, {
+                    speed: 1000,
+                    loop: true,
+                    slidesPerView: 'auto',
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                })
+            }
+            catch (err) {
+                console.log(err)
+            }
+
+        }
+    }
+
+    $('.swiper-certifi').length && slideCer();
+
+    
 }
