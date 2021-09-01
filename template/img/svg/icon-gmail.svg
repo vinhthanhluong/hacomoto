@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_166" data-name="Rectangle 166" width="30" height="30" transform="translate(1535 10585)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="icon-gmail" transform="translate(-1535 -10585)" clip-path="url(#clip-path)">
+    <g id="gmail_1_" data-name="gmail (1)" transform="translate(1535 10585)">
+      <path id="Path_127" data-name="Path 127" d="M28.189,26.162H1.811A1.81,1.81,0,0,1,0,24.352V5.648a1.811,1.811,0,0,1,1.81-1.81H28.189A1.81,1.81,0,0,1,30,5.648v18.7a1.81,1.81,0,0,1-1.81,1.81Z" fill="#fafafa"/>
+      <path id="Path_128" data-name="Path 128" d="M3.622,26.162,28.438,7.733V26.162Z" fill="#f5f5f5"/>
+      <path id="Path_129" data-name="Path 129" d="M3.622,26.162H1.811A1.81,1.81,0,0,1,0,24.352V5.648a1.811,1.811,0,0,1,1.81-1.81H3.622Z" fill="#f44336"/>
+      <path id="Path_130" data-name="Path 130" d="M1.811,3.838H3.622V26.162H1.811Z" fill="#e53935"/>
+      <path id="Path_131" data-name="Path 131" d="M26.378,26.162h1.811A1.81,1.81,0,0,0,30,24.352V5.648a1.81,1.81,0,0,0-1.81-1.81H26.378Z" fill="#f44336"/>
+      <path id="Path_132" data-name="Path 132" d="M28.189,3.838H26.378a1.81,1.81,0,0,1,1.811,1.81v18.7a1.81,1.81,0,0,1-1.811,1.81h1.811A1.81,1.81,0,0,0,30,24.352V5.648A1.81,1.81,0,0,0,28.189,3.838Z" fill="#e53935"/>
+      <path id="Path_133" data-name="Path 133" d="M1.811,3.838H28.189V5.65L15,15.464,1.811,5.221Z" fill="#fafafa"/>
+      <path id="Path_134" data-name="Path 134" d="M29.642,4.569A1.811,1.811,0,0,0,27.108,4.2L15,13.208,2.892,4.2A1.81,1.81,0,1,0,.73,7.1l13.189,9.814a1.811,1.811,0,0,0,2.163,0L29.27,7.1a1.81,1.81,0,0,0,.371-2.533Z" fill="#f44336"/>
+      <g id="Group_157" data-name="Group 157">
+        <path id="Path_135" data-name="Path 135" d="M29.642,4.569a1.811,1.811,0,0,0-2.357-.487A1.81,1.81,0,0,1,27.46,7.1L14.271,16.916a1.813,1.813,0,0,1-.176.114,1.807,1.807,0,0,0,1.987-.114L29.27,7.1a1.81,1.81,0,0,0,.371-2.533Z" fill="#e53935"/>
+      </g>
+    </g>
+  </g>
+</svg>

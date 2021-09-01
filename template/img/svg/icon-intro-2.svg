@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3073" data-name="Rectangle 3073" width="32" height="32" transform="translate(3443 -671)" fill="#00395e"/>
+    </clipPath>
+  </defs>
+  <g id="icon-intro-2" transform="translate(-3443 671)" clip-path="url(#clip-path)">
+    <g id="_x30_2_x2C__warehouse_x2C__Box_x2C__cardboard_x2C__logistics_x2C__store" transform="translate(3443 -670.597)">
+      <path id="XMLID_590_" d="M60.584,41.453,44.936,34.547a.353.353,0,0,0-.284,0L29,41.453a.352.352,0,0,0-.21.322V65.359a.352.352,0,0,0,.352.352h5.159a.352.352,0,0,0,.352-.352V63.811H54.931v1.547a.352.352,0,0,0,.352.352h5.159a.352.352,0,0,0,.352-.352V41.775A.352.352,0,0,0,60.584,41.453Zm-15.79-6.2,9.018,3.981H35.776Zm10.137,20.86H48.642V49.473a.352.352,0,0,0-.352-.352H34.657V45.762H54.931V56.114ZM34.657,49.825h6.288v6.289H34.657Zm6.992,0h6.289v6.289H41.649Zm-6.992,6.993h6.288v6.289H34.657Zm6.992,0h6.289v6.289H41.649Zm6.993,6.289V56.818h6.289v6.289Zm11.448,1.9H55.635V45.41a.352.352,0,0,0-.352-.352H34.305a.352.352,0,0,0-.352.352c0,6.758,0,11.94,0,19.6H29.5V42l4.682-2.066c22.053-.006,21.1.013,21.2-.014L60.09,42Z" transform="translate(-28.794 -34.517)" fill="#00395e"/>
+    </g>
+  </g>
+</svg>

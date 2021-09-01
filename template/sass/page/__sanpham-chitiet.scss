@@ -1,0 +1,376 @@
+.product-detail {
+    padding: 45px 0 0;
+    
+    .product-wrapper{
+        border-bottom: 1px solid rgba($color: $b-cl, $alpha: .2);
+        padding-bottom: 40px;
+    }
+
+    .column {
+        width: calc(100% /12 * 6);
+        @include max-media($bk-d-768){
+            width: 100%;
+        }
+    }
+
+    .slider-product {
+        img {
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .thumbs-small {
+        margin-top: 30px;
+
+        .swiper-slide-thumb-active {
+            .slider-product {
+                border-color: $main-cl;
+                opacity: 1;
+            }
+        }
+
+        .slider-product {
+            border: 1px solid #707070;
+            transition: all .3s ease;
+            cursor: pointer;
+            opacity: .3;
+        }
+    }
+
+    .thumbs-big {
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            background-color: rgba($color: $b-cl, $alpha: .2);
+            height: 100%;
+            margin: 0;
+            top: 0;
+            width: 44px;
+            @include hidden;
+            transition: all .3s ease;
+
+            &::after {
+                color: $w-cl;
+                font-size: 36px;
+            }
+
+            &:hover {
+                background-color: rgba($color: $b-cl, $alpha: .4);
+            }
+        }
+
+        &:hover {
+
+            .swiper-button-prev,
+            .swiper-button-next {
+                @include visible;
+            }
+        }
+
+        .swiper-button-prev {
+            left: 0;
+        }
+
+        .swiper-button-next {
+            right: 0;
+        }
+    }
+
+    .product-title {
+        margin-bottom: 70px;
+
+        @include max-media($bk-d-1200) {
+            margin-bottom: 50px;
+        }
+
+        @include max-media($bk-d-992) {
+            margin-bottom: 30px;
+        }
+    }
+
+    .parame-title {
+        margin-bottom: 30px;
+
+        @include max-media($bk-d-1200) {
+            margin-bottom: 20px;
+        }
+
+        @include max-media($bk-d-768) {
+            margin-bottom: 15px;
+        }
+    }
+
+    .parame-tab {
+        display: table;
+        width: 100%;
+        margin-bottom: 35px;
+        @include max-media($bk-d-1200){
+            margin-bottom: 25px;
+        }
+        tr {
+            &:nth-child(odd) {
+                background-color: #F2F2F2;
+            }
+        }
+
+        td {
+            @include fz-16;
+            padding: 12px 20px 11px;
+
+            @include max-media($bk-d-992) {
+                padding: 11px 15px 10px;
+            }
+        }
+    }
+
+    .parame-price {
+        color: $w-cl;
+        background-color: $main-cl-2;
+        padding: 11px 32px;
+        display: inline-block;
+    }
+
+    .product-quick-desc {
+        padding-top: 45px;
+        margin-top: 40px;
+        border-top: 2px solid $main-cl;
+        @include max-media($bk-d-1200){
+            padding-top: 30px;
+            margin-top: 30px;
+        }
+        @include max-media($bk-d-768){
+            padding-top: 20px;
+        }
+
+        .desc-title {
+            margin-bottom: 30px;
+            @include max-media($bk-d-1200){
+                margin-bottom: 20px;
+            }
+            @include max-media($bk-d-768){
+                margin-bottom: 15px;
+            }
+        }
+
+        .mona-content {
+            @include fz-16;
+            font-weight: 300;
+
+            p {
+                line-height: 1.6;
+            }
+        }
+    }
+
+    .product-detail-desc {
+        margin-top: 40px;
+        padding-top: 40px;
+        border-top: 1px solid rgba($color: $b-cl, $alpha: .2);
+        @include max-media($bk-d-1200){
+            margin-top: 30px;
+            padding-top: 30px;
+        }
+        @include max-media($bk-d-768){
+            margin-top: 20px;
+            padding-top: 20px;
+        }
+
+        .post-title {
+            margin-bottom: 30px;
+            @include max-media($bk-d-1200){
+                margin-bottom: 20px;
+            }
+            @include max-media($bk-d-768){
+                margin-bottom: 15px;
+            }
+        }
+
+        .mona-content {
+            p {
+                line-height: 1.6;
+                font-weight: 300;
+                @include fz-16;
+            }
+
+            .product-img {
+                margin: 50px 0 40px;
+                @include  max-media($bk-d-1200){
+                    margin: 30px 0;
+                }
+
+                img {
+                    height: 100%;
+                    max-width: 100%;
+                    object-fit: cover;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+    .product-tag {
+        margin-top: 60px;
+    }
+}
+
+.product-similar{
+
+    .product-head{
+        padding-right: 92px;
+        @include max-media($bk-576){
+            padding-right: 72px;
+        }
+    }
+
+    .product-title{
+        margin: 10px 0 30px;
+        @include max-media($bk-576){
+            margin-bottom: 20px;
+        }
+    }
+
+    .product-slide{
+        position: relative;
+        .swiper-container{
+            margin: -15px;
+            padding-bottom: 45px;
+            @include max-media($bk-d-992){
+                margin: -7.5px;
+                padding-bottom: 30px;
+            }
+            
+        }
+        .swiper-slide{
+            width: calc(100% / 4);
+            padding: 15px;
+            @include max-media($bk-d-1440){
+                width: calc(100% / 3);
+            }
+
+            @include max-media($bk-d-992){
+                padding: 7.5px;
+            }
+            
+            @include max-media($bk-d-768){
+                width: calc(100% / 2);
+            }
+
+            @include max-media($bk-576){
+                width: 100%;
+            }
+
+        }
+
+        .swiper-pagination-bullet{
+            width: 12px;
+            height: 12px;
+            background-color: $w-cl;
+            border: 1px solid $main-cl;
+            opacity: 1;
+            &-active{
+                background-color: $main-cl;
+
+            }
+        }
+
+        .swiper-button{
+            width: 92px;
+            position: absolute;
+            top: -61px;
+            right: 0;
+            @include max-media($bk-d-992){
+                top: -70px;
+            }
+            @include max-media($bk-576){
+                width: 72px;
+                top: -50px;
+            }
+            
+            
+            .swiper-button-next , .swiper-button-prev{
+                width: 46px;
+                height: 46px;
+                margin: 0;
+                @include max-media($bk-576){
+                    width: 36px;
+                    height: 36px;
+                }
+                &::after{
+                    color: $w-cl;
+                    font-size: 20px;
+                }
+            }
+
+            .swiper-button-next{
+                right: 0;
+                background-color: $main-cl;
+            }
+
+            .swiper-button-prev{
+                left: 0;
+                background-color: $main-cl-2;
+            }
+        }
+    }
+
+
+    &.news-similar{
+        .product-title{
+            margin-bottom: 25px;
+        }
+
+        .product-head{
+            padding-right: 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+
+            .product-link{
+                text-decoration: underline;
+                &:hover{
+                    i{
+                        transform: translateX(5px);
+                    }
+                }
+                i{
+                    margin-left: 10px;
+                    transition: all .3s ease;
+                }
+            }
+        }
+
+        .product-slide {
+            .swiper-container{
+                @include max-media($bk-d-1200){
+                    margin: -10px;
+                }
+                @include max-media($bk-d-992){
+                    margin: -7.5px;
+                }
+            }
+
+            .swiper-slide{
+                width: calc(100% / 3);
+                @include max-media($bk-d-1200){
+                    padding: 10px;
+                }
+
+                @include max-media($bk-d-992){
+                    padding: 7.5px;
+                    width: calc(100% / 2);
+                }
+
+                @include max-media($bk-d-768){
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+
+
+}

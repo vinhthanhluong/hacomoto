@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_164" data-name="Rectangle 164" width="30" height="30" transform="translate(1485 10585)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="icon-youtube" transform="translate(-1485 -10585)" clip-path="url(#clip-path)">
+    <g id="_008-youtube" data-name="008-youtube" transform="translate(1485 10589.498)">
+      <path id="Path_125" data-name="Path 125" d="M29.382,3.287A3.759,3.759,0,0,0,26.738.642C24.39,0,15,0,15,0S5.609,0,3.262.618A3.835,3.835,0,0,0,.618,3.287,39.6,39.6,0,0,0,0,10.5a39.46,39.46,0,0,0,.618,7.216,3.759,3.759,0,0,0,2.644,2.644C5.634,21,15,21,15,21s9.39,0,11.738-.618a3.759,3.759,0,0,0,2.644-2.644A39.607,39.607,0,0,0,30,10.527a37.593,37.593,0,0,0-.618-7.24Zm0,0" fill="red"/>
+      <path id="Path_126" data-name="Path 126" d="M12.01,15l7.809-4.5L12.01,6Zm0,0" fill="#fff"/>
+    </g>
+  </g>
+</svg>

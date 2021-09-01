@@ -1,0 +1,198 @@
+.post-featured {
+    padding: 45px 0 90px;
+    @include max-media($bk-d-1200){
+        padding: 40px 0 60px;
+    }
+
+    @include max-media($bk-d-992){
+        padding: 40px 0;
+    }
+
+    .columns {
+        margin: 0;
+    }
+
+    .column {
+        padding: 0;
+
+        &.post-tx {
+            width: calc(100% / 12 * 3);
+            @include max-media($bk-d-768){
+                width: 100%;
+            }
+        }
+
+        &.post-txt {
+            width: calc(100% / 12 * 9);
+            @include max-media($bk-d-768){
+                width: 100%;
+            }
+        }
+    }
+
+    .post-tab-tt {
+        border: 1px solid rgba($color: #707070, $alpha: .2);
+        height: 100%;
+        .post-title {
+            color: $w-cl;
+            background-color: $main-cl;
+            text-align: center;
+            padding: 7px 0;
+        }
+
+        .tab-link {
+            padding: 20px 30px;
+            @include max-media($bk-d-1200){
+                padding: 15px 20px;
+            }
+        }
+
+        .tab-title {
+            @include fz-16;
+            transition: all .3s ease;
+            cursor: pointer;
+
+            &:not(:last-child) {
+                margin-bottom: 15px;
+                padding-bottom: 15px;
+                border-bottom: 1px solid rgba($color: #707070, $alpha: .2);
+            }
+
+            &.active {
+                font-weight: 600;
+                color: $main-cl;
+                text-decoration: underline;
+            }
+        }
+
+
+    }
+
+    .tab-content {
+        .tab-content-box {
+            display: none;
+
+            &.active {
+                display: block;
+                animation: OutIn 1s;
+            }
+        }
+
+        .post-content {
+            position: relative;
+
+            .post-img {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    max-width: 100%;
+                    object-fit: cover;
+                    min-height: 300px;
+                }
+            }
+
+            .post-text {
+                background-color: rgba($color: $main-cl, $alpha: .6);
+                padding: 18px 30px;
+                color: $w-cl;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                @include max-media($bk-d-1200){
+                    padding: 15px 20px;
+                }
+                @include max-media($bk-d-768){
+                    padding: 15px;
+                }
+            }
+
+            .post-tt {
+                margin-bottom: 15px;
+                max-width: 450px;
+                @include max-media($bk-d-992){
+                    margin-bottom: 10px;
+                }
+            }
+
+            .post-desc {
+                max-width: 450px;
+                line-height: 1.7;
+            }
+
+        }
+    }
+}
+
+.post-silder {
+    .post-head {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 72px 0;
+        color: $w-cl;
+        text-align: center;
+        position: relative;
+        margin-bottom: 40px;
+        @include max-media($bk-d-1200){
+            margin-bottom: 30px;
+            padding: 60px 0;
+        }
+
+        @include max-media($bk-d-768){
+            margin-bottom: 20px;
+            padding: 40px 0;
+        }
+      
+        &::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0%;
+            left: 0;
+            background-color: rgba($color: $b-cl, $alpha: .4);
+        }
+
+        .post-title{
+            z-index: 1;
+            position: relative;
+        }
+    }
+
+    .post-news-slide{
+        .swiper-container{
+            margin: -15px;
+            padding-bottom: 45px;
+            @include max-media($bk-d-1200){
+                margin: -10px;
+            }
+            @include max-media($bk-d-992){
+                margin: -7.5px;
+                padding-bottom: 30px;
+            }
+        }
+
+        .swiper-slide{
+            width: calc(100% / 12 * 4);
+            padding: 15px;
+            @include max-media($bk-d-1200){
+                padding: 10px;
+            }
+            @include max-media($bk-d-992){
+                padding: 7.5px;
+                width: calc(100% / 12 * 6);
+            }
+            @include max-media($bk-576){
+                width: 100%;
+            }
+
+            &-active{
+                .home-boxx-2{
+                    border-color: $main-cl;
+                    box-shadow: 10px 10px 30px rgba($color: $b-cl, $alpha: .16);
+                }
+            }
+        }
+    }
+}

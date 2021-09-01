@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2" data-name="Rectangle 2" width="20" height="20" transform="translate(1354 39)" fill="#007bc6" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="icon-search" transform="translate(-1354 -39)" clip-path="url(#clip-path)">
+    <g id="_x32_-Magnifying_Glass" transform="translate(1354 39)">
+      <path id="Path_1" data-name="Path 1" d="M24.383,23.561l-4.544-4.544a8.747,8.747,0,1,0-.822.822l4.544,4.544a.582.582,0,0,0,.822-.822ZM7.932,18.625a7.561,7.561,0,1,1,5.347,2.215A7.513,7.513,0,0,1,7.932,18.625Z" transform="translate(-4.554 -4.554)" fill="#007bc6"/>
+    </g>
+  </g>
+</svg>

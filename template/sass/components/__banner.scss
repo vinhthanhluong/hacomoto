@@ -1,0 +1,293 @@
+.banners {
+    .swiper-wrapper {
+        margin: 0;
+    }
+
+    .swiper-slide {
+        padding: 0;
+        height: 100%;
+    }
+
+    .swiper-slide>img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .swiper-button-prev {
+        left: 30px;
+		color: $w-cl;
+        @include  max-media($bk-d-768){
+            left: 10px;
+            display: none;
+        }
+    }
+
+    .swiper-button-next {
+        right: 30px;
+		color: $w-cl;
+        @include max-media($bk-d-768){
+            right: 10px;
+            display: none;
+        }
+    }
+
+    .swiper-pagination {
+        position: absolute;
+        bottom: 30px;
+    }
+
+	.swiper-pagination-bullet{
+		width: 12px;
+		height: 12px;
+		margin: 0 10px !important;
+		background-color: $w-cl;
+		border: 1px solid $main-cl;
+		opacity: 1;
+		&-active{
+			background-color: $main-cl;
+		}
+	}
+
+    .banner-slide{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &.banners-sp{
+        .banner-inner{
+            padding: 60px 0;
+            @include max-media($bk-d-992){
+                padding: 20px 0 60px;
+
+            }
+        }
+
+        .swiper-pagination{
+            @include max-media($bk-d-768){
+                bottom: 10px;
+            }
+        }   
+    }
+
+    &.banners-page{
+        padding: 300px 0;
+        text-align: center;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        @include max-media($bk-d-1440){
+            padding: 250px 0;
+        }
+
+        @include max-media($bk-d-1200){
+            padding: 200px 0;
+        }
+
+        @include max-media($bk-d-992){
+            padding: 150px 0;
+        }
+
+        @include max-media($bk-d-768){
+            padding: 100px 0;
+        }
+        &::before{
+            content: '';
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color: $b-cl, $alpha: .3);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .page-title{
+            @include fz-70;
+            color: $w-cl;
+        }
+
+
+        .banner-slide{
+           z-index: 1;
+           position: relative;
+        }
+    }
+
+    &.banners-gt{
+        .banner-slide{
+            position: relative;
+            &::before{
+                content: '';
+                background-color: rgba($color: $b-cl, $alpha: .3);
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+        }
+
+        .page-title{
+            color: $w-cl;
+            text-align: center;
+            padding: 250px 40px;
+            z-index: 2;
+            position: relative;
+            line-height: 1.3;
+            @include max-media($bk-d-1440){
+                padding: 200px 40px;
+            }
+            @include max-media($bk-d-1200){
+                padding: 170px 40px;
+            }
+            @include max-media($bk-d-768){
+                padding: 150px 40px;
+            }
+            @include max-media($bk-576){
+                padding: 100px 40px;
+            }
+        }
+    }
+
+
+
+    .banner-inner {
+        color: $w-cl;
+        padding: 210px 0 205px;
+        @include max-media(1200px){
+            padding: 150px 0;
+        }
+        .banner-title {
+            font-size: 100px;
+            line-height: 1.35;
+            @include max-media(1200px){
+                font-size: 70px;
+            }
+            @include max-media(500px){
+                font-size: 50px;
+            }
+        }
+
+        .banner-more {
+            display: inline-block;
+            margin-top: 44px;
+            width: 200px;
+            background-color: $main-cl;
+            padding: 11px 10px;
+            text-align: center;
+            transition: all .3s ease;
+
+            &:hover {
+                i {
+                    transform: translateX(10px);
+                }
+            }
+
+            i {
+                margin-left: 10px;
+                transition: all .3s ease;
+            }
+        }
+
+        .banner-img{
+            position: relative;
+            display: flex;
+            @include max-media($bk-d-768){
+                flex-direction: column;
+            }
+            
+            .img-arm{
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                @include max-media($bk-d-1200){
+                    transform: none;
+                    top: 0;
+                    width: 350px;
+                }
+                @include max-media($bk-d-992){
+                    width: 250px;
+                }
+                @include  max-media($bk-d-768){
+                    position: static;
+                    width: auto;
+                }
+            }
+
+            .img-pro{
+                margin: 0 auto;
+                @include max-media($bk-d-1440){
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .banner-list{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: -10px;
+            .banner-item{
+                width: calc(100% / 4);
+                color: $b-cl;
+                text-align: center;
+                font-family: 'SVN-Gilroy';
+                padding: 10px;
+                @include max-media($bk-d-1440){
+                    width: calc(100% /2);
+                    display: flex;
+                    align-items: center;
+                    text-align: left;
+                }
+                @include max-media($bk-d-768){
+                    width: 100%;
+                }
+            }
+
+            .banner-t{
+                background-color: #F7D82A;
+                // padding: 10px ;
+                width: 174px;
+                height: 90px;
+                line-height: 1.3;
+                letter-spacing: 3px;
+                margin: 0 auto;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include max-media($bk-d-1440){
+                    margin: 0;
+                    flex-shrink: 0;
+                }
+                @include max-media($bk-d-1200){
+                    width: 150px;
+                    height: 80px;
+                    letter-spacing: 2px;
+                    font-weight: 600;
+                }
+                @include max-media($bk-d-992){
+                    width: 100px;
+                    height: 65px;
+
+                }
+            }
+
+
+            .banner-tx{
+                margin-top: 5px;
+                @include fz-30;
+                @include max-media($bk-d-1440){
+                    padding-left: 10px;
+                    margin-top: 0;
+                }
+            }
+
+            
+        }
+    }
+}

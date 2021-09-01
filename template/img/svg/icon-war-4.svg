@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3001" data-name="Rectangle 3001" width="40" height="40" transform="translate(1011 1582)" fill="#007bc6" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="icon-war-4" transform="translate(-1011 -1582)" clip-path="url(#clip-path)">
+    <g id="engine" transform="translate(1011 1582)">
+      <path id="Path_2407" data-name="Path 2407" d="M37.656,17.656H35.313V15.313H30.547V12.969H25.859V8.281H28.2V5.938H11.8V8.281h2.344v4.688H9.453v2.344H4.688v2.344H2.344V15.313H0V31.719H2.344V29.375H4.688v2.344H9.453v2.344H30.547V31.719h4.766V29.375h2.344v2.344H40V15.313H37.656ZM16.484,8.281h7.031v4.688H16.484ZM2.344,27.031V20H4.688v7.031Zm30.625,2.344H28.2v2.344H11.8V29.375H7.031V17.656H11.8V15.313H28.2v2.344h4.766Zm2.344-2.344V20h2.344v7.031Z" fill="#007bc6"/>
+      <path id="Path_2408" data-name="Path 2408" d="M21.048,19.352l-2.1-1.048L15.76,24.688h4.688l-1.5,2.992,2.1,1.048,3.192-6.383H19.552Z" fill="#007bc6"/>
+    </g>
+  </g>
+</svg>

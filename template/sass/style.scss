@@ -1,0 +1,54 @@
+@charset "utf-8";
+//Font Family
+// @import url(../font/font-popins/stylesheet.css);
+@import url(../font/SVN-Poppins/stylesheet.css);
+@import url(../font/SVN-Gilroy/stylesheet.css);
+@import url(../font/Oswald/stylesheet.css);
+//Libraries
+@import url(../js/libs/aos/aos.css);
+@import url(../js/libs/swiper/swiper.min.css);
+@import url(../js/libs/popup/magnific-popup.css);
+@import url(../js/libs/lightgallery/lightgallery.css);
+@import url(../font/font-awesome-4.7.0/css/font-awesome.min.css);
+@import url(../js/libs/wow/wow.css);
+@import url(../js/libs/fluidplayer/css/fluidplayer.css);
+
+// Core
+@import './core/_variable';
+@import './core/_mona';
+@import './core/_mixins';
+@import './core/_base';
+@import './core/_reset';
+@import './core/_animation';
+@import './core/_code';
+
+// Components
+@import './components/_header';
+@import './components/_footer';
+@import './components/_title';
+@import './components/_sec';
+@import './components/_spacing';
+@import './components/_button';
+@import './components/_overplay';
+@import './components/_tabs';
+@import './components/_customSwiper';
+@import './components/_search';
+@import './components/_banner';
+@import './components/_form-control';
+@import './components/_pagination';
+@import './components/_loading';
+@import './components/_popup-cart';
+@import './components/_lightgallery';
+@import './components/_popup';
+@import './components/_breadcrumb';
+// Page
+@import './page/_home';
+@import './page/_404';
+@import './page/_sanpham-chitiet';
+@import './page/_tintuc-chitiet';
+@import './page/_tintuc';
+@import './page/_sanpham';
+@import './page/_hotro';
+@import './page/_lienhe';
+@import './page/_gioithieu';
+

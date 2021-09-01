@@ -1,0 +1,224 @@
+.main-cl {
+    color: $main-cl;
+}
+
+
+.f-semi {
+    font-weight: 600;
+}
+
+.f-medium {
+    font-weight: 500;
+}
+
+.f-light {
+    font-weight: 300;
+}
+
+.f-italic {
+    font-style: italic;
+}
+
+.f-gilroy {
+    font-family: 'SVN-Gilroy';
+}
+
+.f-oswald {
+    font-family: 'Oswald';
+}
+
+.wow {
+    animation-duration: 1s;
+
+    @include max-media($bk-d-768) {
+        visibility: visible !important;
+        -webkit-animation-name: none !important;
+        -o-animation-name: none !important;
+        animation-name: none !important;
+    }
+}
+
+.home-boxx {
+    border: 1px solid rgba($color: $b-cl, $alpha: .2);
+
+    .home-img {
+        overflow: hidden;
+        &:hover{
+            img{
+                transform: scale(1.1);
+            }
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            max-width: 100%;
+            transition: all .3s ease;
+        }
+    }
+
+    .home-content {
+        padding: 12px 25px 20px;
+        @include max-media($bk-d-1024){
+            padding: 10px 20px 20px;
+        }
+        .home-tt {
+            color: $main-cl-2;
+            margin-bottom: 18px;
+            @include line-clamp(3);
+            transition: all .3s ease;
+            &:hover{
+                color: $main-cl;
+            }
+        }
+
+        .home-info {
+            .home-item {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &:not(:first-child) {
+                    margin-top: 10px;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+
+                .home-t {
+                    font-weight: 500;
+                }
+
+                .home-c {
+                    font-weight: 300;
+                }
+            }
+        }
+
+        .home-total {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 25px;
+            padding-top: 25px;
+            border-top: 1px solid rgba($color: $b-cl, $alpha: .2);
+            @include max-media($bk-d-992){
+                margin-top: 15px;
+                padding-top: 15px;
+            }
+            .home-cal{
+                color: #D22920;
+                transition: all .3s ease;
+                cursor: pointer;
+                &:hover{
+                    color: $main-cl;
+                }
+            }
+        }
+    }
+}
+
+.home-boxx-2 {
+    border: 1px solid rgba($color: $b-cl, $alpha: .2);
+
+    .home-img {
+        overflow: hidden;
+        &:hover{
+            img{
+                transform: scale(1.1);
+            }
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            max-width: 100%;
+            transition: all .3s ease;
+        }
+    }
+
+    .home-content {
+        padding: 12px 25px 44px;
+        @include max-media($bk-d-1024){
+            padding: 10px 20px 20px;
+        }
+
+        .home-la{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            @include max-media($bk-d-992){
+                margin-bottom: 4px;
+            }
+            .home-label{
+                color: #D22920;
+            }
+
+            .la-ri{
+                display: flex;
+                align-items: center;
+                img{
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .home-info{
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            @include max-media($bk-d-992){
+                margin-bottom: 10px;
+            }
+            .home-time{
+                display: flex;
+                align-items: center;
+                img{
+                    margin-right: 10px;
+                }
+            }
+
+            .home-admin{
+                margin-left: 5px;
+            }
+        }
+
+        .home-tt {
+            color: $main-cl-2;
+            margin-bottom: 13px;
+            @include line-clamp(3);
+            transition: all .3s ease;
+            &:hover{
+                color: $main-cl;
+            }
+        }
+
+        .home-desc{
+            line-height: 1.6;
+            margin-bottom: 24px;
+            @include max-media($bk-d-768){
+                margin-bottom: 15px;
+            }
+        }
+
+        .home-more{
+            display: inline-block;
+            text-decoration: underline;
+            &:hover{
+                i{
+                    transform: translateX(5px);
+                }
+            }
+            i{
+                margin-left: 10px;
+                transition: all .3s ease;
+            }
+        }
+
+       
+
+       
+    }
+}

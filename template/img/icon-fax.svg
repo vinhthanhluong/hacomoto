@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_148" data-name="Rectangle 148" width="16" height="16" fill="#007bc6" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="icon-fax" clip-path="url(#clip-path)">
+    <g id="Printer" transform="translate(0 0)">
+      <path id="Path_92" data-name="Path 92" d="M16,4.923H14.154V2.462a.615.615,0,0,0-.615-.615H6.154a.615.615,0,0,0-.615.615V4.923H3.692A1.848,1.848,0,0,0,1.846,6.769v5.538a1.848,1.848,0,0,0,1.846,1.846H5.538v3.077a.615.615,0,0,0,.615.615h7.385a.615.615,0,0,0,.615-.615V14.154H16a1.848,1.848,0,0,0,1.846-1.846V6.769A1.848,1.848,0,0,0,16,4.923ZM6.769,3.077h6.154V4.923H6.769Zm6.154,13.538H6.769V11.077h6.154Zm3.692-4.308a.616.616,0,0,1-.615.615H14.154V10.462a.615.615,0,0,0-.615-.615H6.154a.615.615,0,0,0-.615.615v2.462H3.692a.616.616,0,0,1-.615-.615V6.769a.616.616,0,0,1,.615-.615H16a.616.616,0,0,1,.615.615Z" transform="translate(-1.846 -1.846)" fill="#007bc6"/>
+      <path id="Path_93" data-name="Path 93" d="M11.077,12.308H8.615a.615.615,0,1,0,0,1.231h2.462a.615.615,0,1,0,0-1.231Z" transform="translate(-1.846 -1.846)" fill="#007bc6"/>
+      <path id="Path_94" data-name="Path 94" d="M11.077,14.154H8.615a.615.615,0,1,0,0,1.231h2.462a.615.615,0,1,0,0-1.231Z" transform="translate(-1.846 -1.846)" fill="#007bc6"/>
+      <path id="Path_95" data-name="Path 95" d="M14.769,7.385A.615.615,0,1,0,15.385,8a.616.616,0,0,0-.615-.616Z" transform="translate(-1.846 -1.846)" fill="#007bc6"/>
+    </g>
+  </g>
+</svg>

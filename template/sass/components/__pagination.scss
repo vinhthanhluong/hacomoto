@@ -1,0 +1,37 @@
+.pagination {
+	// margin-top: 30px;
+	text-align: center;
+	li {
+		display: inline-block;
+		vertical-align: middle;
+		padding: 0 5px;
+		.page-numbers {
+			width: 40px;
+			height: 40px;
+			color: #707070;
+			font-weight: 300;
+			transition: all .3s ease;
+			@include lh(24, 14);
+			@include fz-18;
+			@include flex-mid;
+			&.current {
+				color:$main-cl;
+				font-weight: bold;
+			}
+			&:hover {
+				color:$main-cl;
+			}
+		}
+
+		.page-arrow{
+			width: 40px;
+			height: 40px;
+			@include flex-mid;
+			font-size: 16px;
+			transition: all .3 ease;
+			&:hover {
+				color:$main-cl;
+			}
+		}
+	}
+}

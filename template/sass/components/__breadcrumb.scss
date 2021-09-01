@@ -1,0 +1,45 @@
+.breadcrumb {
+    width: 100%;
+    background-color: $main-cl-2;
+    color: $w-cl;
+    &.bg-g-f2 {
+        //background-color: $g-F2F0-cl;
+    }
+
+    .breadcrumb-menu {
+        display: flex;
+        padding: 10px 0;
+
+        @include max-media($bk-576) {
+            overflow-x: scroll;
+            white-space: nowrap;
+        }
+
+
+        .breadcrumb-list {
+            &:not(:first-child) {
+                &::before {
+                    content: ' ';
+                    margin-right: 15px;
+                    width: 4px;
+                    height: 4px;
+                    background-color: $w-cl;
+                    display: inline-block;
+                }
+
+                padding-left: 15px;
+                display: flex;
+                align-items: center;
+            }
+
+            &.current{
+                color: $w-cl;
+                font-weight: bold;
+            }
+
+            a {
+                transition: all .3s ease;
+            }
+        }
+    }
+}
