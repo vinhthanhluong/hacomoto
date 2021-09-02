@@ -123,11 +123,11 @@
                 width: 100%;
             }
 
-            @include max-media($bk-d-992){
+            @include max-media($bk-d-992) {
                 width: 50%;
             }
 
-            @include max-media($bk-576){
+            @include max-media($bk-576) {
                 width: 100%;
             }
 
@@ -271,15 +271,16 @@
                 @include max-media($bk-d-1200) {
                     padding-left: 10px;
                 }
-                
-                @include max-media($bk-d-992){
+
+                @include max-media($bk-d-992) {
                     padding-left: 20px;
                 }
             }
 
             .intro-tx {
                 margin-bottom: 10px;
-                @include max-media($bk-d-768){
+
+                @include max-media($bk-d-768) {
                     margin-bottom: 5px;
                 }
             }
@@ -419,6 +420,153 @@
             }
         }
     }
+
+    .distri-product {
+        padding: 320px 0 300px;
+        position: relative;
+        max-width: 940px;
+        margin: 100px auto;
+
+        .polygon {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 22px 12.5px 0 12.5px;
+            border-color: #FD5807 transparent transparent transparent;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translate(-50%, 94%);
+        }
+
+        .distri-item {
+            background-color: #FD5807;
+            width: 252px;
+            height: 252px;
+            border-radius: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin: 0 auto;
+            position: absolute;
+
+            &:nth-child(1) {
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            &:nth-child(2) {
+                top:  110px;
+                left: 60px;
+            }
+
+            &:nth-child(3) {
+                top:  110px;
+                right: 60px;
+            }
+
+            &:nth-child(5) {
+                top: 415px;
+                left: 10px;
+            }
+
+            &:nth-child(6) {
+                top: 415px;
+                right: 10px;
+            }
+
+            &:nth-child(7) {
+                bottom:  0px;
+                left: 195px;
+            }
+
+            &:nth-child(8) {
+                bottom:  0px;
+                right: 195px;
+            }
+
+            
+
+            .distri-box {
+                background-color: rgba($color: $b-cl, $alpha: .4);
+                box-shadow: 4px 6px 27px rgba($color: $b-cl, $alpha: .7);
+                // background-image: url('../img/bg-distri-box.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 100%;
+                width: 222px;
+                height: 222px;
+                // width: 230px;
+                // height: 230px;
+                position: relative;
+
+
+                &::before {
+                    content: '';
+                    width: 207px;
+                    height: 207px;
+                    border-radius: 100%;
+                    background-image: linear-gradient(135deg, #EEFFF2 0%, #FFFFFF 100%);
+                    @include pos-mid;
+                    z-index: 1;
+                }
+
+                &::after {
+                    content: '';
+                    background-image: linear-gradient(135deg, #FFFFFF 0%, #FBFBFB 32%, #F0F0F0 65%, #DFDFDF 100%);
+                    width: 220px;
+                    height: 220px;
+                    border-radius: 100%;
+                    @include pos-mid;
+                }
+            }
+
+            .distri-tem {
+                z-index: 2;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                height: 100%;
+            }
+
+
+        }
+
+
+
+        .distri-mid {
+            width: 287px;
+            height: 287px;
+            border-radius: 100%;
+            box-shadow: 3px 7px 15px rgba($color: $b-cl, $alpha: .16);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            position: relative;
+
+            &::before {
+                content: '';
+                width: 684px;
+                height: 684px;
+                width: 705px;
+                height: 705px;
+                border-radius: 100%;
+                border: 1px $b-cl dashed;
+                @include pos-mid;
+                z-index: -1;
+            }
+        }
+
+
+    }
+
 }
 
 .our-team {
@@ -548,9 +696,11 @@
 
 .certifications {
     overflow: hidden;
+
     .certifi-head {
         margin-bottom: 40px;
-        @include max-media($bk-d-1200){
+
+        @include max-media($bk-d-1200) {
             margin-bottom: 25px;
         }
     }
@@ -561,47 +711,54 @@
 
     .certifi-slide {
         pointer-events: none;
-        @include max-media($bk-d-1200){
+
+        @include max-media($bk-d-1200) {
             pointer-events: all;
         }
+
         .swiper-slide {
             width: calc(100% / 12 * 3);
             height: auto;
-            @include max-media($bk-d-1024){
+
+            @include max-media($bk-d-1024) {
                 width: calc(100% / 12 * 4);
             }
-            @include  max-media($bk-d-768){
+
+            @include max-media($bk-d-768) {
                 width: 50%;
             }
-            @include max-media($bk-576){
+
+            @include max-media($bk-576) {
                 width: 100%;
             }
         }
 
-        .swiper-wrapper{
+        .swiper-wrapper {
             align-items: center;
         }
 
-        .swiper-container{
-            @include max-media($bk-d-1200){
+        .swiper-container {
+            @include max-media($bk-d-1200) {
                 padding-bottom: 45px;
             }
         }
 
         .swiper-pagination {
             display: none;
-            @include max-media($bk-d-1200){
+
+            @include max-media($bk-d-1200) {
                 display: block;
             }
         }
 
-        .swiper-pagination-bullet{
+        .swiper-pagination-bullet {
             width: 12px;
             height: 12px;
             opacity: 1;
             background-color: $w-cl;
             border: 1px solid $main-cl;
-            &-active{
+
+            &-active {
                 background-color: $main-cl;
             }
         }

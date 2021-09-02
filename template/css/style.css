@@ -7412,6 +7412,133 @@ html .mfp-wrap {
 .distributor .distri-box-more .distri-more i {
   margin-left: 8px;
 }
+.distributor .distri-product {
+  padding: 320px 0 300px;
+  position: relative;
+  max-width: 940px;
+  margin: 100px auto;
+}
+.distributor .distri-product .polygon {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 22px 12.5px 0 12.5px;
+  border-color: #FD5807 transparent transparent transparent;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 94%);
+}
+.distributor .distri-product .distri-item {
+  background-color: #FD5807;
+  width: 252px;
+  height: 252px;
+  border-radius: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  position: absolute;
+}
+.distributor .distri-product .distri-item:nth-child(1) {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.distributor .distri-product .distri-item:nth-child(2) {
+  top: 110px;
+  left: 60px;
+}
+.distributor .distri-product .distri-item:nth-child(3) {
+  top: 110px;
+  right: 60px;
+}
+.distributor .distri-product .distri-item:nth-child(5) {
+  top: 415px;
+  left: 10px;
+}
+.distributor .distri-product .distri-item:nth-child(6) {
+  top: 415px;
+  right: 10px;
+}
+.distributor .distri-product .distri-item:nth-child(7) {
+  bottom: 0px;
+  left: 195px;
+}
+.distributor .distri-product .distri-item:nth-child(8) {
+  bottom: 0px;
+  right: 195px;
+}
+.distributor .distri-product .distri-item .distri-box {
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 6px 27px rgba(0, 0, 0, 0.7);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+  width: 222px;
+  height: 222px;
+  position: relative;
+}
+.distributor .distri-product .distri-item .distri-box::before {
+  content: "";
+  width: 207px;
+  height: 207px;
+  border-radius: 100%;
+  background-image: linear-gradient(135deg, #EEFFF2 0%, #FFFFFF 100%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.distributor .distri-product .distri-item .distri-box::after {
+  content: "";
+  background-image: linear-gradient(135deg, #FFFFFF 0%, #FBFBFB 32%, #F0F0F0 65%, #DFDFDF 100%);
+  width: 220px;
+  height: 220px;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.distributor .distri-product .distri-item .distri-tem {
+  z-index: 2;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+.distributor .distri-product .distri-mid {
+  width: 287px;
+  height: 287px;
+  border-radius: 100%;
+  box-shadow: 3px 7px 15px rgba(0, 0, 0, 0.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+}
+.distributor .distri-product .distri-mid::before {
+  content: "";
+  width: 684px;
+  height: 684px;
+  width: 705px;
+  height: 705px;
+  border-radius: 100%;
+  border: 1px #000000 dashed;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
 
 .our-team {
   overflow: hidden;
