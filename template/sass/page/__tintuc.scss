@@ -1,5 +1,6 @@
 .post-featured {
     padding: 45px 0 90px;
+    overflow: hidden;
     @include max-media($bk-d-1200){
         padding: 40px 0 60px;
     }
@@ -125,6 +126,7 @@
 }
 
 .post-silder {
+    overflow: hidden;
     .post-head {
         background-repeat: no-repeat;
         background-position: center;

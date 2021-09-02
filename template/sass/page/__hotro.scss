@@ -1,6 +1,7 @@
 .support-cate {
     background-color: #F0F0F0;
     padding: 40px 0;
+    overflow: hidden;
 
     .columns {
         justify-content: space-between;
@@ -42,6 +43,7 @@
 
 .delivery-policy {
     padding: 40px 0 90px;
+    overflow: hidden;
 
     @include max-media($bk-d-1200) {
         padding-bottom: 60px;
@@ -102,6 +104,7 @@
     background-size: cover;
     padding: 115px 0;
     position: relative;
+    overflow: hidden;
 
     @include max-media($bk-d-1440) {
         padding: 90px 0;
@@ -180,6 +183,7 @@
 
 
 .support-video {
+    overflow: hidden;
     .support-head {
         margin-bottom: 30px;
         @include max-media($bk-d-1200){
@@ -375,6 +379,7 @@
 }
 
 .document{
+    overflow: hidden;
     .document-head{
         margin-bottom: 30px;
     }

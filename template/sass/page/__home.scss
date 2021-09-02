@@ -267,11 +267,17 @@
         background-position: center;
         background-size: cover;
         color: $w-cl;
+        @include max-media(660px){
+            background-image: url("../img/img-eye-2.png");
+            padding: 15px 0;
+        }
     }
 
     .column {
         width: calc(100% / 12 * 6);
-
+        @include max-media(660px){
+            width: 100%;
+        }
         &:nth-child(2) {
             padding-left: 370px;
 
@@ -281,6 +287,9 @@
 
             @include max-media(849px) {
                 padding-left: 15px;
+            }
+            @include max-media(660px){
+                padding-left: 7.5px;
             }
         }
 
@@ -293,6 +302,9 @@
 
             @include max-media(849px) {
                 padding-left: 15px;
+            }
+            @include max-media(660px){
+                padding-left: 7.5px;
             }
         }
     }
@@ -354,11 +366,18 @@
         @include max-media(849px) {
             padding: 30px 0;
         }
+        @include max-media(660px){
+            max-width: 100%;
+            padding: 15px 0;
+        }
 
         .home-head {
             display: flex;
             align-items: center;
             margin-bottom: 35px;
+            @include max-media($bk-d-768){
+                margin-bottom: 25px;
+            }
 
             .home-title {
                 text-transform: uppercase;
@@ -372,6 +391,9 @@
 
                 &:not(:first-child) {
                     margin-top: 25px;
+                    @include max-media($bk-d-768){
+                        margin-top: 15px;
+                    }
                 }
             }
         }
@@ -939,11 +961,13 @@
 
 .home-hacom-video {
     background-color: #f0f0f0;
-    padding: 90px 0;
     overflow: hidden;
 
     .container-full {
         padding: 0;
+        @include max-media($bk-992){
+            padding: 0 15px;
+        }
     }
 
     .home-label {
@@ -952,6 +976,9 @@
 
     .home-title {
         margin-bottom: 15px;
+        @include max-media($bk-992){
+            margin-bottom: 5px;
+        }
     }
 
     .home-sl {
@@ -961,6 +988,9 @@
     .home-slide {
         // max-width: 820px;
         // margin: 0 auto;
+        @include max-media($bk-d-1440){
+            margin-top: 20px;
+        }
     }
 
     .swiper-container {
@@ -968,6 +998,9 @@
         margin: 0 auto;
         overflow: visible;
         padding-bottom: 40px;
+        @include max-media($bk-992){
+            max-width: 100%;
+        }
 
         .swiper-wrapper {
             align-items: center;
@@ -977,7 +1010,7 @@
             width: 460px !important;
             transition: all 0.3s ease;
 
-            @include max-media(1200px) {
+            @include max-media($bk-992) {
                 width: 100% !important;
             }
         }
@@ -985,7 +1018,7 @@
         .swiper-slide-active {
             width: 820px !important;
 
-            @include max-media(1200px) {
+            @include max-media($bk-992) {
                 width: 100% !important;
             }
 
@@ -994,13 +1027,28 @@
                 max-width: 820px;
                 opacity: 1;
                 box-shadow: 10px 10px 30px rgba($color: $b-cl, $alpha: 0.16);
-
+                @include max-media($bk-992){
+                    max-width: 100%;
+                }
                 .home-video {
                     height: 540px;
+                    @include max-media($bk-992){
+                        height: 400px;
+                    }
+                    @include max-media($bk-576){
+                        height: 320px;
+                    }
                 }
 
                 video {
                     height: 540px;
+                    @include max-media($bk-992){
+                        height: 400px;
+                    }
+
+                    @include max-media($bk-576){
+                        height: 320px;
+                    }
                 }
 
                 .home-text {
@@ -1034,16 +1082,23 @@
             position: absolute;
             bottom: 0;
             left: 0;
+            right: 0;
             background-color: rgba($color: $main-cl, $alpha: 0.6);
             padding: 40px 25px;
             color: $w-cl;
             transition: all 0.3s ease;
             @include hidden;
             transform: translateY(100%);
+            @include  max-media($bk-d-768){
+                padding: 20px;
+            }
         }
 
         .home-tt {
             margin-bottom: 15px;
+            @include max-media($bk-d-768){
+                margin-bottom: 7px;
+            }
         }
 
         .home-desc {

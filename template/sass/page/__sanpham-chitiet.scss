@@ -1,6 +1,6 @@
 .product-detail {
     padding: 45px 0 0;
-    
+    overflow: hidden;
     .product-wrapper{
         border-bottom: 1px solid rgba($color: $b-cl, $alpha: .2);
         padding-bottom: 40px;
@@ -217,7 +217,7 @@
 }
 
 .product-similar{
-
+    overflow: hidden;
     .product-head{
         padding-right: 92px;
         @include max-media($bk-576){

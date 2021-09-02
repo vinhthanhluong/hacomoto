@@ -1,6 +1,6 @@
 .product-cate {
     padding-top: 45px;
-
+    overflow: hidden;
     .column {
         width: 100%;
 
@@ -182,6 +182,7 @@
 }
 
 .product-pro {
+    overflow: hidden;
     .product-label {
         margin-bottom: 5px;
     }
